@@ -1,0 +1,16 @@
+body {
+    background-color: #a1ccbd;
+}
+
+#navbar_principal {
+    background-color: #89aae7;
+}
+#texto_cambiante {
+    font-style: italic;
+    text-align: center;
+  }
+#about {
+    text-align: center;
+    font-size: 10px;
+}
+
