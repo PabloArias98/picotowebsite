@@ -12,35 +12,46 @@
 
   <h1 class="display-1">Picoto Software</h1>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="earth.ico" alt="" width="30" height="30" class="d-inline-block align-text-top">
-        Sitio Web Oficial
-    </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="earth.ico" alt="" width="30" height="30" class="d-inline-block align-text-top">Sitio Web Oficial</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <nav class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#">Historia</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historia</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarProductos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Productos
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarProductos">
-              <li><a class="dropdown-item" href="#">Organizer 1.0</a></li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Writer 0.8b</a></li>
-              <li><a class="dropdown-item" href="#">Coming soon...</a></li>
+              <li><a class="dropdown-item" href="#">Organizer 1.0</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <a class="nav-link" href="#">Contáctenos</a>
-          <a class="nav-link" href="#">Documentación</a>
-          <a class="nav-link" href="#">Acerca de...</a>
-        </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Documentación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctenos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Que desea hacer?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
       </div>
     </div>
-</nav>
+  </nav>
 
   <p>&nbsp;</p>
 
@@ -65,10 +76,27 @@
         Desde 2021 tenemos la motivación de ofrecer a nuestros clientes el mejor de nuestros productos con tal de que puedan cumplir sus objetivos empresariales a través de nuestros productos. Picoto Software nació a través de un sueño que era muy necesario y muestra el saber hacer y quien lucha por un futuro mejor lo consigue!
         <small class="text-muted">Hecho todo con mucho mimo</small>
     </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
 
-    
+    <p id="texto_cambiante">
+      No tiene nada que perder y muchooo que ganar, únase a nosotros
+    </p>
 
-    <link href="estilos/style.css" rel="stylesheet">
+    <script>
+      let p = document.getElementById("texto_cambiante");
+      p.onclick = cambiarTexto;
+      
+      function cambiarTexto(){
+        alert("Se cambiará el texto");
+        p.replaceWith("Únase ya a nuestra compañía no lo piense más!");
+      }
+    </script>
+
+    <p id="about">
+      (c)2011-2022 Picoto Corporation, todos los derechos reservados
+    </p>
+
     </body>
-   
+    <link href="estilos/style.css" rel="stylesheet">
 </html>
