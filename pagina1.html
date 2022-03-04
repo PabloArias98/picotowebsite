@@ -13,6 +13,7 @@
   <h1 class="display-1">Picoto Software</h1>
 
 
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="earth.ico" alt="" width="30" height="30" class="d-inline-block align-text-top">Sitio Web Oficial</a>
@@ -62,7 +63,13 @@
     <p class="blockquote-footer">Las mejores soluciones tecnológicas a día de hoy, empiece a ver los cambios con Picoto Software!</p>
     </div>
     </div>
+
+    <h4 class="display-8">Nuestros clientes:<br></h4>
     
+    <div id="clientes">
+
+
+    </div>
     
   <p>&nbsp;</p>
     <h2 align="center">Nuestros productos, nuestra pasión</h2>
@@ -91,6 +98,43 @@
         alert("Se cambiará el texto");
         p.replaceWith("Únase ya a nuestra compañía no lo piense más!");
       }
+    </script>
+
+    <script>
+      
+var arrayClientes = [
+    {
+        "nombre": "Pablo",
+        "apellidos": "Momenbe",
+        "edad": 32
+    },
+    {
+        "nombre": "Tom",
+        "apellidos": "Jones",
+        "edad": 44
+    },
+    {
+        "nombre": "Motorola",
+        "apellidos": "Richardson",
+        "edad": 65
+    },
+    {
+        "nombre": "Ayrton",
+        "apellidos": "Lula",
+        "edad": 19
+    }
+    ]
+    
+console.log(arrayClientes);
+
+let texto = "<ul>"
+//Recorremos array
+for (let i = 0; i < arrayClientes.length; i++) {
+  texto += "<li>" + arrayClientes[i].nombre + " " + arrayClientes[i].apellidos + "</li>";
+}
+texto += "</ul>";
+document.getElementById("clientes").innerHTML = texto;
+
     </script>
 
     <p id="about">
