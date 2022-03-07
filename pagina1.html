@@ -66,7 +66,7 @@
 
     <h4 class="display-8">Nuestros clientes:<br></h4>
     
-    <div id="clientes">
+    <div class="display-10" id="clientes">
 
 
     </div>
@@ -130,8 +130,9 @@ console.log(arrayClientes);
 let texto = "<ul>"
 //Recorremos array
 for (let i = 0; i < arrayClientes.length; i++) {
-  texto += "<li>" + arrayClientes[i].nombre + " " + arrayClientes[i].apellidos + "</li>";
+  texto += "<li>" + arrayClientes[i].nombre + " " + arrayClientes[i].apellidos + " de " + arrayClientes[i].edad + " años</li>";
 }
+
 texto += "</ul>";
 document.getElementById("clientes").innerHTML = texto;
 
