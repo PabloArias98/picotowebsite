@@ -23,6 +23,11 @@ min-height:3rem;
     font-family: 'Roboto Condensed', sans-serif;
 min-height:10rem;
 }
+
+#eslogan {
+    font-family: 'Nunito', sans-serif;
+}
+
 #body_picoto {
     background-color: #7a82ca;
 }
