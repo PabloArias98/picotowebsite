@@ -1,7 +1,28 @@
 body {
-    background-color: #a1ccbd;
+    background-color: #d1e7e0;
+    
+}
+.cover{
+    height:400px;
+    background-size: cover;
+    background-position: center;
+
+}
+.cover-small{
+    height:200px;
+    background-blend-mode: normal;
+
 }
 
+.card-title {
+    font-style:oblique;
+min-height:3rem;
+}
+
+.card-text {
+    font-family: 'Roboto Condensed', sans-serif;
+min-height:10rem;
+}
 #body_picoto {
     background-color: #7a82ca;
 }
