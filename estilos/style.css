@@ -28,6 +28,20 @@ min-height:10rem;
     font-family: 'Nunito', sans-serif;
 }
 
+#texto_mimo {
+    font-family: 'Nunito', sans-serif;
+    font-size: normal;
+    text-align: center;
+    font-style: italic;
+}
+
+#eslogan_texto {
+    font-family: 'Nunito', sans-serif;
+    font-size: normal;
+    text-align: center;
+    font-style: italic;
+}
+
 #body_picoto {
     background-color: #7a82ca;
 }
