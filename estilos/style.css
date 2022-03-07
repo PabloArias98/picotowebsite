@@ -31,6 +31,14 @@ min-height:10rem;
 #body_picoto {
     background-color: #7a82ca;
 }
+
+#body_document {
+    background-color: lavender;
+}
+
+#body_contact {
+    background-color: bisque;
+}
 #navbar_principal {
     background-color: #89aae7;
 }
