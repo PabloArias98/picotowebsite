@@ -17,6 +17,7 @@ body {
 .card-title {
     font-style:oblique;
 min-height:3rem;
+text-align: center;
 }
 
 .card-text {
