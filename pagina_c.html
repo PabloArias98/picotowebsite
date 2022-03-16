@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Información de contacto</title>
     <link rel="icon" href="agent.ico">
 </head>
@@ -67,6 +67,68 @@
     <p class="display-10">Correo: pabloarias98@hotmail.com</p>
     <p>&nbsp;</p>
 
+    <div id="formulario" class="container">
+        <form action="php/datos.php" method="post">
+
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+
+            <label for="lname">Apellidos</label>
+            <input type="text" id="lname" name="lastname" placeholder="Tus apellidos">
+
+            <label for="email">Su correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico"> 
+
+            <label for="country">País</label>
+            <select id="country" name="country">
+                <option value="germany">Alemania</option>
+                <option value="argentina">Argentina</option>
+                <option value="australia">Australia</option>
+                <option value="austria">Austria</option>
+                <option value="belgium">Bélgica</option>
+                <option value="brasil">Brasil</option>
+                <option value="canada">Canadá</option>
+                <option value="ciprius">Chipre</option>
+                <option value="colombia">Colombia</option>
+                <option value="rep_checa">Checa, República</option>
+                <option value="spain">España</option>
+                <option value="usa">Estados Unidos</option>
+                <option value="estonia">Estonia</option>
+                <option value="france">Francia</option>
+                <option value="greece">Grecia</option>
+                <option value="hong_kong">Hong Kong</option>
+                <option value="hungary">Hungría</option>
+                <option value="ireland">Irlanda</option>
+                <option value="india">India</option>
+                <option value="italy">Italia</option>
+                <option value="japan">Japón</option>
+                <option value="lethonia">Letonia</option>
+                <option value="lithuania">Lituania</option>
+                <option value="luxembourg">Luxemburgo</option>
+                <option value="macao">Macao</option>
+                <option value="malta">Malta</option>
+                <option value="mexico">México</option>
+                <option value="norway">Noruega</option>
+                <option value="new_zealand">Nueva Zelanda</option>
+                <option value="netherlands">Países Bajos</option>
+                <option value="poland">Polonia</option>
+                <option value="portugal">Portugal</option>
+                <option value="united_kingdom">Reino Unido</option>
+                <option value="russia">Rusia</option>
+                <option value="south_africa">Sudáfrica, República de</option>
+                <option value="sweden">Suecia</option>
+                <option value="swiss">Suíza</option>
+                <option value="turkey">Turquía</option>
+                <option value="ucraine">Ucrania</option>
+            </select>
+
+            <label for="subject">Mensaje</label>
+            <textarea id="subject" name="subject" placeholder="Contenido" style="height:200px"></textarea>
+            <div style="text-align:center">
+            <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
     <p>&nbsp;</p>
 
     <section>
@@ -81,7 +143,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Sobre nosotros</h5>
                             <p class="card-text">
-                                Tiene a su disposición nuestro número de teléfono, correo y fax sobre cualquier pregunta o consulta que desee hacer
+                                Tiene a su disposición nuestro número de teléfono, correo y fax sobre cualquier pregunta
+                                o consulta que desee hacer
                             </p>
                         </div>
                     </div>
@@ -91,7 +154,7 @@
 
     </section>
 
-    
+
 
     <p id="about">
         (c)2011-2022 Picoto Corporation, todos los derechos reservados
@@ -99,5 +162,6 @@
 
 </body>
 <link href="estilos/style.css" rel="stylesheet">
+<link href="estilos/formulario.css" rel="stylesheet">
 
 </html>
