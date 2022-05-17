@@ -62,6 +62,9 @@ min-height:10rem;
 #navbar_principal {
     background-color: #89aae7;
 }
+#body_persons {
+    background-color: rgb(87, 87, 201);
+}
 #texto_cambiante {
     font-style: italic;
     text-align: center;
